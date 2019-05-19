@@ -1,5 +1,5 @@
 @section('title','App Inventaris | Ruang Baru')
-@section('nav-kategori','active')
+@section('nav-ruang','active')
 @extends('layouts.app')
 
 @section('content')
