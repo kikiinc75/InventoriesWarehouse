@@ -54,7 +54,7 @@
                         </div>
                         <div class="media-body align-self-center">
                             <div class="title text-twitter">Peminjaman</div>
-                            <div class="number">{{$pinjam}} Transaksi</div>
+                            <div class="number">@if($show>0){{$pinjam}}@else 0 @endif Transaksi</div>
                         </div>
                     </div>
                 </div>
@@ -122,6 +122,7 @@
     <!-- End peminjaman -->
     @endif
 </div>
+@if($show>0)
 <div class="widget has-shadow">
     <div class="widget-header bordered no-actions d-flex align-items-center">
         <h1>Peminjaman</h1>
@@ -166,6 +167,6 @@
         </div>
     </div>
 </div>
-
+@endif
 <!-- End Row -->
 @endsection
